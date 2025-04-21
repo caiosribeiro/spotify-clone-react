@@ -13,7 +13,6 @@
   "type": "module",
   "dependencies": {
     "cors": "^2.8.5",
-    "deploy": "file:..",
     "express": "^4.21.2",
     "mongodb": "^6.13.0",
     "path": "^0.12.7"
