@@ -14,8 +14,11 @@ const __dirname = path.resolve();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors());
 // app.use(express.json());
+const allowedOrigins = ['http://localhost:5173', 'https://caiosribeirojp.com'];
+app.use(cors({
+  origin: allowedOrigins,
+}));
 
 app.get("/api/", (request, response) => {
   response.send("Só vamos trabalhar com os endpoints '/artists' e '/songs'");
