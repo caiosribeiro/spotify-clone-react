@@ -3,7 +3,7 @@
 // Fullfilled
 import { MongoClient } from "mongodb";
 
-const URI = process.env.MONGODB_URI;
+const URI = process.env.MONGO_URI;
 
 const client = new MongoClient(URI);
 
