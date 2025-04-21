@@ -12,7 +12,7 @@ import path from "path";
 const __dirname = path.resolve();
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 8080;
 
 // app.use(express.json());
 const allowedOrigins = ['http://localhost:5173', 'https://caiosribeirojp.com'];
